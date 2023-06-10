@@ -2,10 +2,10 @@ set -eu
 
 export PYTHONUNBUFFERED=true
 
-VIRTUALENV=.data/venv
+VIRTUALENV=.data/venvs
 
 if [ ! -d $VIRTUALENV ]; then
-  python3 -m venv $VIRTUALENV
+  python3 -m venvs $VIRTUALENV
 fi
 
 if [ ! -f $VIRTUALENV/bin/pip ]; then
